@@ -5,30 +5,38 @@ body {
 }
 nav {
     font-family: "Outfit", sans-serif;
-    background-color: rgb(15, 212, 186);
+    background-color: #17c3e99c;
 }
 h1{
-    color: rgba(228, 231, 38, 0.815);
+    color: #f4e919d2;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .nav-link{
-    color: rgb(245, 41, 228);
+    color: #f345bf;
 }
 .dropdown-item{
-    color: rgb(23, 175, 9);
+    color: #533f92;
 }
 .navbar-brand{
-    color: rgb(242, 245, 41); 
+    color: #f4e919e3; 
     padding-left: 5%; 
     padding-top: 1rem;
 }
 .navbar-toggler{
-    border-color: #fff;
+    border-color: #ffffff;
 }
 .nav-link-dropdown-toggle{
-    color: rgb(245, 41, 228);
+    color: #f345bf;
     text-decoration: none;
 }
 .nav-item-dropdown{
     padding-top: 7px;
+    position: relative;
+    display: inline-block;
 }
-
+.row{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
