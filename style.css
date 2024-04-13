@@ -5,7 +5,30 @@ body {
 }
 nav {
     font-family: "Outfit", sans-serif;
+    background-color: rgb(15, 212, 186);
 }
 h1{
     color: rgba(228, 231, 38, 0.815);
 }
+.nav-link{
+    color: rgb(245, 41, 228);
+}
+.dropdown-item{
+    color: rgb(23, 175, 9);
+}
+.navbar-brand{
+    color: rgb(242, 245, 41); 
+    padding-left: 5%; 
+    padding-top: 1rem;
+}
+.navbar-toggler{
+    border-color: #fff;
+}
+.nav-link-dropdown-toggle{
+    color: rgb(245, 41, 228);
+    text-decoration: none;
+}
+.nav-item-dropdown{
+    padding-top: 7px;
+}
+
