@@ -3,8 +3,39 @@ body {
     font-family: "Outfit", sans-serif;
     color: #b2b2c1;
 }
+nav {
+    font-family: "Outfit", sans-serif;
+    background-color: #17c3e99c;
+}
 h1{
     color: #f4e919d2;
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 20px;
+}
+h2{
+    padding-left: 20px;
+}
+.nav-link{
+    color: #f345bf;
+}
+.dropdown-item{
+    color: #533f92;
+}
+.navbar-brand{
+    color: #f4e919e3; 
+    padding-left: 5%; 
+    padding-top: 1rem;
+}
+.navbar-toggler{
+    border-color: #ffffff;
+}
+.nav-link-dropdown-toggle{
+    color: #f345bf;
+    text-decoration: none;
+}
+.nav-item-dropdown{
+    padding-top: 7px;
+    position: relative;
+    display: inline-block;
 }
