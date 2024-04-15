@@ -18,11 +18,6 @@ h1{
 .dropdown-item{
     color: #533f92;
 }
-.navbar-brand{
-    color: #f4e919e3;  
-    padding-left: 50px;
-    padding-top: 1rem;
-}
 .navbar-toggler{
     border-color: #ffffff;
 }
@@ -45,4 +40,3 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 55%;
-}
