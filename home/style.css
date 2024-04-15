@@ -16,7 +16,7 @@ h1{
     color: #f345bf;
 }
 .dropdown-item{
-    color: #533f92;
+    color: 853dc9;
 }
 .navbar-toggler{
     border-color: #ffffff;
@@ -41,3 +41,14 @@ h1{
     margin-right: auto;
     width: 44%;
 }
+.container-ul{
+    text-align: center;
+}
+.myUL {
+    display: inline-block;
+    text-align: left;
+  }
+  h3{
+    color: #853dc9;
+    text-align: center;
+  }
