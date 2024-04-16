@@ -39,3 +39,15 @@ h2{
     position: relative;
     display: inline-block;
 }
+.pic-table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+td{
+    margin: 10px;
+    padding-right: 200px;
+    padding-left: 200px;
+    justify-content: center;
+    width: auto;
+}
