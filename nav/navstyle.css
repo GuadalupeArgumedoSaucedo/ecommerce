@@ -20,17 +20,17 @@ h2{
     color: #f345bf;
 }
 .dropdown-item{
-    color: #533f92;
+    color: rgba(0, 0, 0, 0.911);
 }
 .navbar-brand{
     color: #f4e919e3; 
     padding-top: 1rem;
 }
 .navbar-toggler{
-    border-color: #ffffff;
+    border-color:#f345bf;
 }
 .nav-link-dropdown-toggle{
-    color: #f345bf;
+    color: #853dc9;
     text-decoration: none;
 }
 .nav-item-dropdown{

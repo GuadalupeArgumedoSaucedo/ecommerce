@@ -16,13 +16,13 @@ h1{
     color: #f345bf;
 }
 .dropdown-item{
-    color: 853dc9;
+    color: rgba(0, 0, 0, 0.911);
 }
 .navbar-toggler{
-    border-color: #ffffff;
+    border-color: #f345bf;
 }
 .nav-link-dropdown-toggle{
-    color: #f345bf;
+    color: #853dc9;
     text-decoration: none;
 }
 .nav-item-dropdown{
