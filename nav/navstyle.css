@@ -8,13 +8,14 @@ nav {
     background-color: #17c3e99c;
 }
 h1{
-    color: #f4e919d2;
+    color: #853dc9;
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 50px;
 }
 h2{
     padding-left: 50px;
+    color: #E3C922;
 }
 .nav-link{
     color: #f345bf;
@@ -30,7 +31,7 @@ h2{
     border-color:#f345bf;
 }
 .nav-link-dropdown-toggle{
-    color: #853dc9;
+    color: #E3C922;
     text-decoration: none;
 }
 .nav-item-dropdown{
@@ -38,7 +39,7 @@ h2{
     position: relative;
     display: inline-block;
 }
-.container{
+.container1{
     padding-top: 40px;
     margin-left: 28%;
 }

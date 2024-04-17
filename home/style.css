@@ -8,7 +8,7 @@ nav {
     background-color: #17c3e99c;
 }
 h1{
-    color: #f4e919d2;
+    color: #853dc9;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -22,7 +22,7 @@ h1{
     border-color: #f345bf;
 }
 .nav-link-dropdown-toggle{
-    color: #853dc9;
+    color: #E3C922;
     text-decoration: none;
 }
 .nav-item-dropdown{
@@ -49,6 +49,6 @@ h1{
     text-align: left;
   }
   h3{
-    color: #853dc9;
+    color: #17c3e99c;
     text-align: center;
   }
