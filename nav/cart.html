@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test2</title>
-
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/nav/navstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="/nav/navstyle.css">
+
 </head>
 <body>
     <header>
@@ -67,7 +70,7 @@
             <section>
             <div class="row" id="billingandpay">
             <div class="col-lg-6" id="billing">
-            <h4 id="cartlist">Billing Address</h4>
+            <h4 id="cartlist" style="color: #f345bf">Billing Address</h4>
 
             <label for="firstname" id="cartlist">First name</label>
             <input type="text" id="cartlist">
@@ -97,7 +100,7 @@
     </div>
 
     <div class="col-lg-6" id="payment">
-            <h4 id="cartlist">Payment information</h4>
+            <h4 id="cartlist" style="color: #f345bf">Payment information</h4>
         
             <label for="nameoncard" id="cartlist">Name on card</label>
             <input type="text" id="cartlist">
@@ -116,20 +119,21 @@
     </div>
 </div>
 
- <div id="cobuttono"><button type="button" class="btn btn-primary" id="cobuttoni">Primary</button></div>
-
 <div class="row" id="cart">
     <div class="col-lg-12">
 
-          <h4>Cart</h4>
+          <h4 style="color: #f345bf;">Cart</h4>
 
-          <p><a href="#">Abby Road by The Beatles Vynil Record</a> <span class="price">$15</span></p>
-          <p><a href="#">God of war: Ragnarok PS5</a> <span class="price">$5</span></p>
-          <p><a href="#">Teenage Mutant Ninja Turtles: The Last Ronin Graphic Novel</a> <span class="price">$8</span></p>
-          <p><a href="#">Broadway: Hamilton - King George Funko Pop!</a> <span class="price">$2</span></p>
+          <p><a class="cartitems" href="/products/music.html">Abby Road by The Beatles Vynil Record</a> <span class="price">$15</span></p>
+          <p><a class="cartitems" href="/products/videogames.html">God of war: Ragnarok PS5</a> <span class="price">$5</span></p>
+          <p><a class="cartitems" href="/products/books.html">Teenage Mutant Ninja Turtles: The Last Ronin Graphic Novel</a> <span class="price">$8</span></p>
+          <p><a class="cartitems" href="/products/collectibles.html">Broadway: Hamilton - King George Funko Pop!</a> <span class="price">$2</span></p>
           <div id="coline"><hr></div>
 
           <p>Total <span class="price"><b>$30</b></span></p>
+
+          <div id="cobuttono"><button type="button" class="btn btn-primary" style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);"id="cobuttoni">Primary</button></div>
+
     </div>
 </div>
             </section>
