@@ -107,3 +107,8 @@ color: #ffffff;
 .cartitems{
     color: #E3C922;
 }
+#carouselExample{
+   width: 90%;
+   margin-left: 70px;
+   margin-top: 50px;
+}
