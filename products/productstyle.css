@@ -40,15 +40,17 @@ h2{
     position: relative;
     display: inline-block;
 }
-.pic-table{
-    display: flex;
+#productpics{
+    width: min-content;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
-td{
-    margin: 10px;
-    padding-right: 200px;
-    padding-left: 200px;
+.pic-table{
+    margin-left: 130px;
+    align-items: center;
     justify-content: center;
-    width: auto;
+}
+.card-body{
+    margin-right: 19%;
+    margin-bottom: 100px;
 }
