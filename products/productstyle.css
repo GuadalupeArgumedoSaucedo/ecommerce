@@ -46,11 +46,14 @@ h2{
     justify-content: center;
 }
 .pic-table{
-    margin-left: 130px;
+    margin-left: 110px;
     align-items: center;
     justify-content: center;
 }
 .card-body{
     margin-right: 19%;
     margin-bottom: 100px;
+}
+.card-title{
+    color: #E3C922;
 }
