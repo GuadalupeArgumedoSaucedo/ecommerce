@@ -19,6 +19,7 @@ h2{
 }
 .nav-link{
     color: #f345bf;
+    text-shadow: 2px 2px black;
 }
 .dropdown-item{
     color: rgba(0, 0, 0, 0.911);
@@ -33,6 +34,7 @@ h2{
 .nav-link-dropdown-toggle{
     color: #E3C922;
     text-decoration: none;
+    text-shadow: 2px 2px black;
 }
 .nav-item-dropdown{
     padding-top: 7px;
@@ -70,11 +72,11 @@ label{
     width: 60%;
 }
 #billing{
-    padding-left: 100px;
+    padding-left: 250px;
     padding-top: 50px;
 }
 #payment{
-    padding-left: 100px;
+    padding-left: 75px;
     padding-top: 50px;
 }
 #cobuttoni{
@@ -95,17 +97,18 @@ label{
     margin-bottom: 50px;
     border-color: #17c3e99c;
 }
-hr{
-    width: 50%;
-}
 #coline{
-    padding-left: 33%;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-right: 5%;
 }
 .price{
 color: #ffffff;
+float: right;
 }
 .cartitems{
     color: #E3C922;
+    text-decoration: none;
 }
 #carouselExample{
    width: 90%;
