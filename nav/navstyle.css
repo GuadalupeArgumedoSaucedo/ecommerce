@@ -107,9 +107,10 @@ padding-right: 1%;
     padding-left: 1%;
 }
 #carouselExample{
-   width: 90%;
-   margin-left: 70px;
+   width: 100%;
    margin-top: 50px;
+   padding-left: 10%;
+   padding-right: 10%;
 }
 header{
     margin-left: 15px;
