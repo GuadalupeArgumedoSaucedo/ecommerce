@@ -42,24 +42,36 @@ h2{
     position: relative;
     display: inline-block;
 }
-.productpics{
-    width: min-content;
+.cards{
+    margin: 0 15px 0 50px;
+    max-width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 20px;
+}
+.card{
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    width: 95%;
+    justify-content: end;
     align-items: center;
-    justify-content: center;
 }
-.pic-table{
-    margin-left: 110px;
+.card__image{
+    width: 55%;
+    display: block;
+}
+.cardinfo{
+    padding: 15px;
+    justify-content: start;
+}
+.cardcontent{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    font-size: .8em;
+    border-bottom: 2px solid white;
+    font-size: x-large;
+    color: #853dc9;
 }
-.card-body{
-    margin-right: 19%;
-    margin-bottom: 100px;
-}
-.card-title{
-    color: #E3C922;
-    padding-top: 20px;  
-}
-td{
-
+#productbutton{
+    width: 100%;
 }
