@@ -66,76 +66,71 @@
         <h1>Shopping Cart</h1>
         <h2>Retro Rhythm Register</h2>
             <section>
-            <div class="row" id="billingandpay">
-            <div class="col-lg-6" id="billing">
-            <h4 class="cartlist" style="color: #f345bf">Billing Address</h4>
-
-            <label for="firstname" class="cartlist">First name</label>
-            <input id="firstname" type="text" class="cartlist">
-        
-            <label for="lastname" class="cartlist">Last name</label>
-            <input id="lastname" type="text" class="cartlist">
-        
-            <label for="email">Email</label>
-            <input id="email" type="text" class="cartlist">
-        
-            <label for="address" class="cartlist">Address</label>
-            <input id="address" type="text" class="cartlist">
-        
-            <label for="city" class="cartlist">City</label>
-            <input id="city" type="text" class="cartlist">
-        
-            <label for="state" class="cartlist">State</label>
-            <input id="state" type="text" class="cartlist">
-        
-            <label for="zipcode" class="cartlist">Zip code</label>
-            <input id="zipcode" type="text" class="cartlist">
-        
-            <label for="country" class="cartlist">Country</label>
-            <input id="country" type="text" class="cartlist">
-            
-            <div class="cartlist"><input type="checkbox">Shipping address same as billing</div>
-    </div>
-
-    <div class="col-lg-6" id="payment">
-            <h4 class="cartlist" style="color: #f345bf">Payment information</h4>
-        
-            <label for="nameoncard" class="cartlist">Name on card</label>
-            <input id="nameoncard" type="text" class="cartlist">
-        
-            <label for="ccnumber" class="cartlist">Credit card number</label>
-            <input id="ccnumber" type="number" class="cartlist">
-        
-            <label for="expmonth" class="cartlist">Exp month</label>
-            <input id="expmonth" type="text" class="cartlist">
-        
-            <label for="expyear" class="cartlist">Exp year</label>
-            <input id="expyear" type="text" class="cartlist">
-        
-            <label for="cvv" class="cartlist">CVV</label>
-            <input id="cvv" type="text" class="cartlist">
-    </div>
-</div>
-
-<div class="row" id="cart">
-    <div class="col-lg-12">
-  
-          <h4 style="color: #f345bf;">Shopping Cart</h4>
-  
-          <ol type="1" style="text-align: start;">
-            <li><a class="cartitems" href="/products/music.html">Abby Road by The Beatles Vynil Record</a> <span class="price">$30</span></li>
-            <li><a class="cartitems" href="/products/videogames.html">God of war: Ragnarok PS5</a> <span class="price">$40</span></li>
-            <li><a class="cartitems" href="/products/books.html">Teenage Mutant Ninja Turtles: The Last Ronin Graphic Novel</a> <span class="price">$20</span></li>
-            <li><a class="cartitems" href="/products/collectibles.html">Broadway: Hamilton - King George Funko Pop!</a> <span class="price">$20</span></li>
-          </ol>
-          <div id="coline"><hr></div>
-  
-          <p style="text-align: start;">Total <span class="price"><b>$110</b></span></p>
-  
-          <div id= "cobuttono"><button type="button" class="btn btn-primary" style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);" id="cobuttoni">Checkout</button></div>
-  
-    </div>
-  </div>
+                <div class="row" id="billingandpay">
+       
+                    <div class="col-lg-6" id="billing">
+                        <h4 class="cartlist" style="color: #f345bf">Billing Address</h4>
+                
+                            <label for="firstname" class="cartlist">First name</label>
+                            <input id="firstname" type="text" class="cartlist">
+                        
+                            <label for="lastname" class="cartlist">Last name</label>
+                            <input id="lastname" type="text" class="cartlist">
+                        
+                            <label for="email">Email</label>
+                            <input id="email" type="text" class="cartlist">
+                        
+                            <label for="address" class="cartlist">Address</label>
+                            <input id="address" type="text" class="cartlist">
+                        
+                            <label for="city" class="cartlist">City</label>
+                            <input id="city" type="text" class="cartlist">
+                        
+                            <label for="state" class="cartlist">State</label>
+                            <input id="state" type="text" class="cartlist">
+                        
+                            <label for="zipcode" class="cartlist">Zip code</label>
+                            <input id="zipcode" type="text" class="cartlist">
+                        
+                            <label for="country" class="cartlist">Country</label>
+                            <input id="country" type="text" class="cartlist">
+                            
+                            <div class="cartlist" id="shippingbox"><input type="checkbox">Shipping address same as billing</div>
+                    </div>
+                
+                    <div class="col-lg-6" id="payment">
+                        <h4 class="cartlist" style="color: #f345bf">Payment information</h4>
+                    
+                        <label for="nameoncard" class="cartlist">Name on card</label>
+                        <input id="nameoncard" type="text" class="cartlist">
+                    
+                        <label for="ccnumber" class="cartlist">Credit card number</label>
+                        <input id="ccnumber" type="number" class="cartlist">
+                    
+                        <label for="expmonth" class="cartlist">Exp month</label>
+                        <input id="expmonth" type="text" class="cartlist">
+                    
+                        <label for="expyear" class="cartlist">Exp year</label>
+                        <input id="expyear" type="text" class="cartlist">
+                    
+                        <label for="cvv" class="cartlist">CVV</label>
+                        <input id="cvv" type="text" class="cartlist">
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <h4 style="color: #f345bf;" id="carttittle">Shopping Cart</h4>
+                
+                    <ul class="cart">
+                        <li class="list-group-item list-group-item-secondary" id="cartitems">Abby Road by The Beatles Vynil Record<span class="price">$30</span></li>
+                        <li class="list-group-item list-group-item-secondary" id="cartitems">God of war: Ragnarok PS5<span class="price">$40</span></li>
+                        <li class="list-group-item list-group-item-secondary" id="cartitems">Teenage Mutant Ninja Turtles: The Last Ronin Graphic Novel<span class="price">$20</span></li>
+                        <li class="list-group-item list-group-item-secondary" id="cartitems">Broadway: Hamilton - King George Funko Pop!<span class="price">$20</span></li>
+                        <li class="list-group-item list-group-item-action list-group-item-success" id="total"style="text-align: start;">Total<span class="price">$110</span></li>
+                    
+                        <div id= "cobuttono"><button type="button" class="btn btn-primary" style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);" id="cobuttoni">Checkout</button></div>
+                    </ul>
+                </div>
             </section>
         </article>
   </header>
