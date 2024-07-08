@@ -3,17 +3,25 @@ body {
     font-family: "Outfit", sans-serif;
     color: #b2b2c1;
 }
+
+h1{
+    color: #853dc9;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Nav Bar */
 nav {
     font-family: "Outfit", sans-serif;
     background-color: #17c3e99c;
     padding: 0.5rem 1rem; /* Adjust padding as needed */
     height: 100px; /* Adjust height as needed */
 }
-h1{
-    color: #853dc9;
-    padding-top: 20px;
-    padding-bottom: 10px;
+
+.dropdown-menu.custom-dropdown-space {
+    margin-top: 10px; /* Adjust the value as needed */
 }
+
 .nav-link{
     color: #f345bf;
     text-shadow: 2px 2px black;
