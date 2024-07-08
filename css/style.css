@@ -6,6 +6,8 @@ body {
 nav {
     font-family: "Outfit", sans-serif;
     background-color: #17c3e99c;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    height: 100px; /* Adjust height as needed */
 }
 h1{
     color: #853dc9;
