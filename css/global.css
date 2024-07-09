@@ -1,4 +1,9 @@
 
+body {
+    background-color: rgba(0, 0, 0, 0.911);
+    font-family: "Outfit", sans-serif;
+    color: #b2b2c1;
+}
 
 /* Nav Bar */
 nav {
