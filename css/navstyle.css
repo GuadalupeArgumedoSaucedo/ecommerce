@@ -17,30 +17,7 @@ h2{
     padding-left: 50px;
     color: #E3C922;
 }
-.nav-link{
-    color: #f345bf;
-    text-shadow: 2px 2px black;
-}
-.dropdown-item{
-    color: rgba(0, 0, 0, 0.911);
-}
-.navbar-brand{
-    color: #f4e919e3; 
-    padding-top: 5px;
-}
-.navbar-toggler{
-    border-color:#f345bf;
-}
-.nav-link-dropdown-toggle{
-    color: #E3C922;
-    text-decoration: none;
-    text-shadow: 2px 2px black;
-}
-.nav-item-dropdown{
-    padding-top: 7px;
-    position: relative;
-    display: inline-block; 
-}
+
 .container1{
     padding-top: 40px;
     margin-left: 44%;
