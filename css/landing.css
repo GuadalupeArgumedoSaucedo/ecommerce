@@ -1,8 +1,9 @@
-
-h1{
+h1 {
     color: #853dc9;
-    padding-top: 30px;
-    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(107, 5, 93, 0.766); /* Black shadow */
 }
 
 h3{
