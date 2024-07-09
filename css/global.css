@@ -1,4 +1,3 @@
-
 body {
     background-color: rgba(0, 0, 0, 0.911);
     font-family: "Outfit", sans-serif;
@@ -8,7 +7,7 @@ body {
 /* Nav Bar */
 nav {
     font-family: "Outfit", sans-serif;
-    background-color: #17c3e99c;
+    background: linear-gradient(45deg,#17afd1ad, #41d9fbc5);
     padding: 0.5rem 1rem; 
     height: 100px;
 }
@@ -45,7 +44,7 @@ nav {
 
 .nav-link:hover {
     color:#f345bf; /* Change color on hover */
-    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9); /* Enhance shadow on hover */
+    text-shadow: 3px 3px 7px rgba(30, 30, 30, 0.9); /* Enhance shadow on hover */
 }
 
 .nav-icon:hover {
