@@ -1,95 +1,136 @@
-
-h1{
-    color: #853dc9;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 50px;
+h1 {
+  color: #853dc9;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
 }
-h2{
-    padding-left: 50px;
+h2 {
+  color: #e3c922;
+}
+
+h3 {
+  margin-left: 40%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* About us */
+section {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.content-wrapper {
+  height: 800px;
+  overflow-y: scroll;
+  padding-right: 15px;
+  position: relative;
+}
+
+.col-md-4 {
+    margin-top: 45px;
+}
+.row {
+  text-align: center;
+}
+
+.scroll-icon {
+    font-size: 24px;
     color: #E3C922;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
 }
 
-.container1{
-    padding-top: 40px;
-    margin-left: 44%;
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
-.form-check{
-    margin-left: 47%;
+
+
+
+
+.list-group-item:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
-h3{
-    margin-left: 40%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.container1 {
+  padding-top: 40px;
+  margin-left: 44%;
 }
-.form-check-login{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 42%;
-    padding-right: 29%;
-    padding-top: 2%;
+.form-check {
+  margin-left: 47%;
 }
-.row{
-    text-align: center;
+.form-check-login {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 42%;
+  padding-right: 29%;
+  padding-top: 2%;
 }
-label{
-    display: flex;
-    flex-wrap: wrap;
+label {
+  display: flex;
+  flex-wrap: wrap;
 }
-.cartlist{
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
+.cartlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
 }
-#billing{
-    padding-left: 10%;
-    padding-right: 10%;
+#billing {
+  padding-left: 10%;
+  padding-right: 10%;
 }
-#payment{
-    padding-left: 10%;
-    padding-right: 10%;
+#payment {
+  padding-left: 10%;
+  padding-right: 10%;
 }
-#cobuttoni{
-    width: 100%;
-    background-color: #853dc9
+#cobuttoni {
+  width: 100%;
+  background-color: #853dc9;
 }
-#cobuttono{
-    padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 7%;
-    padding-right: 10%;
+#cobuttono {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 10%;
 }
-.cart{
-    margin-left: 5%;
-    margin-right: 10%;
+.cart {
+  margin-left: 5%;
+  margin-right: 10%;
 }
-#coline{
-    padding-left: 5%;
-    padding-top: 10px;
-    padding-right: 5%;
+#coline {
+  padding-left: 5%;
+  padding-top: 10px;
+  padding-right: 5%;
 }
-.price{
-color: #000000;
-float: right;
-padding-right: 1%;
+.price {
+  color: #000000;
+  float: right;
+  padding-right: 1%;
 }
-#carouselExample{
-   width: 100%;
-   margin-top: 50px;
-   padding-left: 10%;
-   padding-right: 10%;
+#carouselExample {
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-header{
-    margin-left: 15px;
-    margin-right: 15px;
+#shippingbox {
+  padding-top: 5%;
 }
-#shippingbox{
-    padding-top: 5%;
+#total {
+  text-decoration: none;
 }
-#total{
-    text-decoration: none;
-}
-#carttittle{
-    padding-left: 7%;
-    padding-top: 5%;
+#carttittle {
+  padding-left: 7%;
+  padding-top: 5%;
 }
