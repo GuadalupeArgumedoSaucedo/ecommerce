@@ -6,6 +6,7 @@ h1 {
 }
 h2 {
   color: #e3c922;
+  margin-bottom: 35px;
 }
 
 h3 {
@@ -16,53 +17,65 @@ h3 {
 
 /* About us */
 section {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.content-wrapper {
-  height: 800px;
-  overflow-y: scroll;
-  padding-right: 15px;
-  position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .col-md-4 {
     margin-top: 45px;
 }
-.row {
-  text-align: center;
+
+.content-wrapper {
+    padding-right: 15px;
 }
 
-.scroll-icon {
-    font-size: 24px;
-    color: #E3C922;
+.text-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #c8c8c8;
+    margin-bottom: 20px;
+}
+
+.aboutus-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    color: #c8c8c8;
+    transition: max-height 0.3s ease;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.aboutus-dropdown-content.show {
+    max-height: 1000px; /* Adjust based on content height */
+}
+
+.aboutus-dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    animation: bounce 2s infinite;
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc; /* Separator line */
+    margin-bottom: 20px; /* Added margin-bottom for spacing */
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
+.aboutus-dropdown-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.aboutus-dropdown-toggle.collapsed i {
+    transform:  rotate(180deg);
+}
+
+.aboutus-dropdown-toggle:not(.collapsed) i {
+    transform: rotate(0deg);
+}
+
+.aboutus-dropdown-toggle:hover {
+    font-weight:600;
 }
 
 
-
-
-.list-group-item:hover {
-  font-weight: bold;
-  cursor: pointer;
-}
 .container1 {
   padding-top: 40px;
   margin-left: 44%;
