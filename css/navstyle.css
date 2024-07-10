@@ -1,5 +1,5 @@
 h1 {
-  color: #853dc9;
+  color:  #e3c922d8;
   padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
@@ -26,7 +26,7 @@ section {
 }
 
 .content-wrapper {
-    padding-right: 15px;
+    margin-top: 30px;
 }
 
 .text-description {
@@ -46,7 +46,7 @@ section {
 }
 
 .aboutus-dropdown-content.show {
-    max-height: 1000px; /* Adjust based on content height */
+  max-height: 1000px; 
 }
 
 .aboutus-dropdown-toggle {
@@ -65,10 +65,6 @@ section {
 
 .aboutus-dropdown-toggle.collapsed i {
     transform:  rotate(180deg);
-}
-
-.aboutus-dropdown-toggle:not(.collapsed) i {
-    transform: rotate(0deg);
 }
 
 .aboutus-dropdown-toggle:hover {
