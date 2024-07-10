@@ -1,24 +1,17 @@
 h1 {
-  color:  #e3c922d8;
+  color: #f1d627;
   padding-top: 40px;
-  padding-bottom: 30px;
-  text-align: center;
 }
 h2 {
-  color: #e3c922;
+  color: #f1d627;
   margin-bottom: 35px;
 }
 
-h3 {
-  margin-left: 40%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
 /* About us */
 section {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .col-md-4 {
@@ -32,8 +25,13 @@ section {
 .text-description {
     font-size: 18px;
     line-height: 1.5;
-    color: #c8c8c8;
+    color: #b7b6b6;
     margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+
+.text-description:hover {
+  color: #ffffff;
 }
 
 .aboutus-dropdown-content {
@@ -47,6 +45,14 @@ section {
 
 .aboutus-dropdown-content.show {
   max-height: 1000px; 
+}
+
+.aboutus-dropdown-content p {
+  color: #b7b6b6;
+  transition: color 0.3s ease;
+}
+.aboutus-dropdown-content p:hover {
+  color: #ffffff;
 }
 
 .aboutus-dropdown-toggle {
@@ -71,25 +77,82 @@ section {
     font-weight:600;
 }
 
+/* Events */
+.value-card {
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.container1 {
-  padding-top: 40px;
-  margin-left: 44%;
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.form-check {
-  margin-left: 47%;
+
+.value-card p {
+  background-color: #ffffff19;
+  border: 1px solid #4f4e4e;
+  padding: 97px;
+  font-size: 1.55em;
+  color:  #c8c8c8;
+  border-radius: 8px;
 }
-.form-check-login {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 42%;
-  padding-right: 29%;
-  padding-top: 2%;
+
+.value-card img {
+  border-radius: 8px;
 }
-label {
-  display: flex;
-  flex-wrap: wrap;
+
+.fixed-height {
+  height: 350px;
+  object-fit: cover;
 }
+
+/* Register */
+.register-container {
+  background:#ffffff19;
+  border-radius: 10px;
+  border: 1px solid #4f4e4e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  color:  #c8c8c8;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #853dc9;
+  border-color: #853dc9;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #6c2aa0;
+  border-color: #481b6b;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-check-label {
+  margin-left: 1px;
+}
+
+.form-check-input:checked {
+  background-color: #853dc9;
+  border-color: #853dc9;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #868587;
+  margin: 0 auto;
+}
+
+/* Cart */
+
 .cartlist {
   display: flex;
   flex-wrap: wrap;
