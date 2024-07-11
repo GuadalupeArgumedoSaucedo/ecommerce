@@ -1,0 +1,121 @@
+body {
+    background-color: rgba(0, 0, 0, 0.911);
+    font-family: "Outfit", sans-serif;
+    color: #b2b2c1;
+  }
+  nav {
+    font-family: "Outfit", sans-serif;
+    background-color: #17c3e99c;
+  }
+  h1 {
+    color: #853dc9;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+  h2 {
+    padding-left: 50px;
+    color: #e3c922;
+  }
+  .nav-link {
+    color: #f345bf;
+    text-shadow: 2px 2px black;
+  }
+  .dropdown-item {
+    color: rgba(0, 0, 0, 0.911);
+  }
+  .navbar-toggler {
+    border-color: #f345bf;
+  }
+  .nav-link-dropdown-toggle {
+    color: #e3c922;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+  }
+  .nav-item-dropdown {
+    padding-top: 7px;
+    position: relative;
+    display: inline-block;
+  }
+  .container {
+    background-color: #3e3c3c;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .btn {
+    background-color: #853dc9;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .btn:hover {
+    background-color: #17c3e99c;
+  }
+  a {
+    color: #17c3e99c;
+  }
+  hr {
+    border: 1px solid lightgrey;
+  }
+  .price {
+    float: right;
+    color: white;
+  }
+  .subtotal {
+    color: white;
+  }
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    color: #f345bf;
+    text-align: start;
+  }
+  .product-frame {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .item-details h4 {
+    color: #e3c922;
+  }
+  .remove-btn {
+    background-color: #17c3e99c;
+    color: white;
+  }
+  .cart-item {
+    padding-bottom: 5%;
+  }
+  .product-image{
+  width: 80%;
+  padding-left: 20%;
+  }
+  .quantity{
+  padding-left: 30%;
+  width: 70%;
+  }
+  #billingText{
+    margin-left: 15%;
+  }
