@@ -51,3 +51,85 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// cart.js
+
+// Function to display cart items
+function displayCartItems() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.querySelector('.cart-items');
+    cartItemsContainer.innerHTML = '';
+
+    cart.forEach((item, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <div class="item-details">
+                <h4>${item.name}</h4>
+                <div class="product-image">
+                    <img src="${item.image}" alt="${item.name}" class="product-frame">
+                </div>
+                <div class="price">$${item.price}</div>
+                <div class="quantity">
+                    <input type="number" value="${item.quantity}" min="1" class="quantity-field" data-index="${index}">
+                </div>
+                <div class="subtotal">$${(item.price * item.quantity).toFixed(2)}</div>
+                <div class="remove">
+                    <button class="remove-btn" data-index="${index}">Remove</button>
+                </div>
+            </div>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+    });
+
+    calculateTotal();
+}
+
+// Function to calculate total price
+function calculateTotal() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    let tax = subtotal * 0.08;
+    let shipping = 5.00;
+    let total = subtotal + tax + shipping;
+
+    document.querySelector('.final-subtotal').textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+    document.querySelector('.tax').textContent = `Taxes (8%): $${tax.toFixed(2)}`;
+    document.querySelector('.shipping').textContent = `Shipping: $${shipping.toFixed(2)}`;
+    document.querySelector('.total').textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Function to remove item from cart
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCartItems();
+}
+
+// Function to update item quantity
+function updateQuantity(index, quantity) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart[index].quantity = quantity;
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCartItems();
+}
+
+// Event listeners for remove buttons and quantity fields
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('remove-btn')) {
+        const index = event.target.getAttribute('data-index');
+        removeFromCart(index);
+    }
+});
+
+document.addEventListener('input', (event) => {
+    if (event.target.classList.contains('quantity-field')) {
+        const index = event.target.getAttribute('data-index');
+        const quantity = parseInt(event.target.value);
+        updateQuantity(index, quantity);
+    }
+});
+
+// Display cart items on page load
+displayCartItems();
