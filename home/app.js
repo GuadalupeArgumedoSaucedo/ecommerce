@@ -27,11 +27,19 @@ dropdown.addEventListener("change", function () {
             displayInstruments(instruments); // Show all instruments
             break;
 
+<<<<<<< HEAD
         case "Music":
             break;
         case "Cards":
             displayCards(cards) // Show all cards
 
+=======
+        case "Cards":
+            displayCards(cards) // Show all cards
+            break;
+        case "Music":
+           
+>>>>>>> parent of 1835426 (Revert "Dropdown")
         case "Books":
         case "Video Games":
             getVideoGames();
