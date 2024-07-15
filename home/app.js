@@ -27,11 +27,11 @@ dropdown.addEventListener("change", function () {
             displayInstruments(instruments); // Show all instruments
             break;
 
+        case "Music":
+            break;
         case "Cards":
             displayCards(cards) // Show all cards
-            break;
-        case "Music":
-           
+
         case "Books":
         case "Video Games":
             getVideoGames();
