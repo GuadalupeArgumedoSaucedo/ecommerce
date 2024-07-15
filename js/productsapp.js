@@ -1,5 +1,3 @@
-// productsapp.js
-
 // Function to add item to cart
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];

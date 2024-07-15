@@ -52,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// cart.js
-
 // Function to display cart items
 function displayCartItems() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
