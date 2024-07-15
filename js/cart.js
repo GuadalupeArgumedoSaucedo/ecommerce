@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const tax = subtotal * TAX_RATE;
         const total = subtotal + tax + SHIPPING_COST;
 
+        // Update the summary totals in the HTML
         subtotalElement.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
         taxElement.textContent = `Taxes (8%): $${tax.toFixed(2)}`;
         shippingElement.textContent = `Shipping: $${SHIPPING_COST.toFixed(2)}`;
