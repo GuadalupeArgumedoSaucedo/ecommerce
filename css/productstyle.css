@@ -1,74 +1,38 @@
-body {
-    background-color: rgba(0, 0, 0, 0.911);
-    font-family: "Outfit", sans-serif;
-    color: #b2b2c1;
+h1 {
+  color: #f1d627;
 }
-nav {
-    font-family: "Outfit", sans-serif;
-    background-color: #17c3e99c;
+
+h2 {
+  color: #f345bf;
 }
-h1{
-    color: #853dc9;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+
+.cards {
+  margin: 0 15px 0 50px;
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  gap: 20px;
 }
-h2{
-    padding-left: 20px;
-    color: #E3C922;
+.card {
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+  width: 95%;
+  justify-content: end;
+  align-items: center;
 }
-.nav-link{
-    color: #f345bf;
-    text-shadow: 2px 2px black;
+.card__image {
+  width: 55%;
+  display: block;
 }
-.dropdown-item{
-    color: rgba(0, 0, 0, 0.911);
+.cardinfo {
+  padding: 15px;
+  justify-content: start;
 }
-.navbar-brand{
-    color: #f4e919e3; 
-    padding-left: 0px;
-    padding-top: 5px;
-}
-.navbar-toggler{
-    border-color: #f345bf;
-}
-.nav-link-dropdown-toggle{
-    color: #E3C922;
-    text-decoration: none;
-    text-shadow: 2px 2px black;
-}
-.nav-item-dropdown{
-    padding-top: 7px;
-    position: relative;
-    display: inline-block;
-}
-.cards{
-    margin: 0 15px 0 50px;
-    max-width: 95%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-    gap: 20px;
-}
-.card{
-    box-shadow: 0 0 3px rgb(0, 0, 0);
-    width: 95%;
-    justify-content: end;
-    align-items: center;
-}
-.card__image{
-    width: 55%;
-    display: block;
-}
-.cardinfo{
-    padding: 15px;
-    justify-content: start;
-}
-.cardcontent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: .8em;
-    border-bottom: 2px solid white;
-    font-size: x-large;
-    color: #853dc9;
+.cardcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  border-bottom: 2px solid white;
+  font-size: x-large;
+  color: #853dc9;
 }

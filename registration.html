@@ -1,115 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/navstyle.css">
-</head>
-<body>
-    <main>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                      <a class="navbar-brand" href="/index.html">
-                        <img src="/images/ecommercelogosm.png" width="100" height="100" alt="logo">
-                      </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-top: 2rem">
-                        <li class="nav-item-dropdown">
-                            <a class="nav-link-dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <h4>Products▼</h4>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Retro Rhythm Register</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/account.css">
+    </head>
+    
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/images/ecommercelogosm-removebg.png" width="100" height="100" alt="logo"
+                            class="navbar-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">
+                                    <h4>Home</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/events.html">
+                                    <h4>Events</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/aboutus.html">
+                                    <h4>About Us</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/products.html">
+                                    <h4>Products</h4>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-primary nav-icon me-2" href="/cart.html" role="button"
+                                style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                                <i class="fas fa-shopping-cart"></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/music.html">Music</a></li>
-                                <li><a class="dropdown-item" href="/videogames.html">Video Games</a></li>
-                                <li><a class="dropdown-item" href="/books.html">Books</a></li>
-                                <li><a class="dropdown-item" href="/cards.html">Trading cards</a></li>
-                                <li><a class="dropdown-item" href="/collectibles.html">Collectibles</a></li>
-                                <li><a class="dropdown-item" href="/instruments.html">Instruments</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"><h4>Home</h4></a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/registration.html"><h4>Registration</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login.html"><h4>Log in</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/events.html"><h4>Events</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/aboutus.html"><h4>About us</h4></a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <a class="btn btn-primary" href="/cart.html" role="button" 
-                         style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);">Cart</a>
-                    </form>
+                            <div class="dropdown nav-icon">
+                                <button class="btn btn-primary nav-icon dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);">
+                                    <i class="fas fa-user"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end custom-dropdown-space"
+                                    aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="/login.html">Log in</a></li>
+                                    <li><a class="dropdown-item" href="/registration.html">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header style="text-align: center;">
+                <h1>Join Our Family</h1>
+            </header>
+    
+            <div class="container mt-5 register-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Register</h2>
+                        <hr class="my-4">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="name" class="form-label">User Name</label>
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="John Doe">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="example@gmail.com">
+                                </div>
+    
+                                <div class="col-12">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="*******" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="rePassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="rePassword"
+                                        placeholder="*******" required>
+                                </div>
+                            </div>
+                            <label style="margin-top: 20px;">
+                                <input type="checkbox" name="saveInfo" id="save-info"> I want to receive promotional emails!
+                            </label>
+                            <hr class="my-4">
+                            <div class="mb-4">
+                                <p style="font-size: 18px;">How did you hear about us?</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio1" name="radio" value="radio1">
+                                        <label class="form-check-label" for="radio1">Online Ad</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="radio" value="radio2">
+                                        <label class="form-check-label" for="radio2">Social Media</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio3" name="radio" value="radio3">
+                                        <label class="form-check-label" for="radio3">Friend/Family</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio4" name="radio" value="radio4">
+                                        <label class="form-check-label" for="radio4">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn w-100 mt-3" onclick="saveData()">Sign Me Up!</button>
+                        </form>
+                    </div>
+                    <div class="col-md-1 d-flex align-items-center justify-content-center">
+                        <div class="vertical-divider"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <h3 class="mt-5" style="margin-top: 60px !important; color: #f1d627;">Create an account</h3>
+                        <p style="margin-top: 30px;">With an account, you can:</p>
+                        <ul class="list-inline" style="margin-bottom: 100px;">
+                            <li class="list-inline-item">Check out faster</li>
+                            <li class="list-inline-item">Get special offers</li>
+                            <li class="list-inline-item">Benefit from Retro Rhythm Awards</li>
+                            <li class="list-inline-item">Add items to your Wishlist</li>
+                            <li class="list-inline-item">Keep track of your Orders</li>
+                            <li class="list-inline-item">& much more!</li>
+                        </ul>
+                        <hr class="my-4">
+                        <h4 style="margin-top: 80px;">Already have an account?</h4>
+                        <a href="/login.html" class="btn mt-2">Log In</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-
-         <header>
-            <h1>Join Our Family</h1>
-            <h2>Registering for Retro Rhythm Rewards</h2>
-         </header>
-
-         <div class="container1">
-            <form action="/action_page.php">
-              <label for="usrname">Username</label>
-              <input type="text" id="usrname" name="usrname" required>
-
-              <label for="email">Email</label>
-              <input type="text" id="email" name="usrname" required>
-          
-              <label for="psw">Password</label>
-              <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-
-              <label for="cpsw">Confirm Password</label>
-              <input type="password" id="cpsw" name="cpsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-            </form>
-          </div>
-
-        <h3 style="color: #f345bf;">How did you hear about us?</h3>
-
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                Search engine
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                Social media
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2-1" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                Friend/family
-            </label>
-            
-          </div>
-          <input type="checkbox" class="btn-check" id="btn-check">
-          <label class="btn btn-primary" for="btn-check" style="margin-left: 49%; margin-top: 50px; margin-bottom: 50px; 
-          background-color: #853dc9; border-color:rgb(0, 0, 0); color: rgb(255, 255, 255);">submit</label>
         </main>
-    <script src="/js/navapp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        <script src="/js/registration.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                     crossorigin="anonymous"></script>
 </body>
