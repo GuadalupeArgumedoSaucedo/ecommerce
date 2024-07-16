@@ -21,4 +21,4 @@ document.querySelectorAll('.btn-warning').forEach((button, index) => {
         addToCart(product);
     });
 });
-}
+

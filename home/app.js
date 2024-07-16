@@ -26,11 +26,15 @@ dropdown.addEventListener("change", function () {
         case "Instruments":
             displayInstruments(instruments); // Show all instruments
             break;
+        case "Music":
+            displayMusic(music)// Show all music
+
+            break;
         case "Cards":
             displayCards(cards) // Show all cards
             break;
-        case "Music":
-           
+        
+
         case "Books":
             displaybooks(books)
             break;
@@ -183,7 +187,7 @@ let cards = [
     {
         name: "YuGiOh Battle of Chaos Booster",
         price: 100,
-        img: "5",
+        img: "/images/cyugiohs.jpg",
         descrip: "The pack introduces thrilling new cards and strategies for dueling enthusiasts. With a focus on chaos-themed monsters and spells, players can unleash devastating combos and turn the tide of battle."
     },
     {
@@ -360,6 +364,64 @@ function displaybooks(books) {
 
 
 
+//MUSIC 
 
+let music = [
+    {
+        name: "Abbey Road by The Beatles",
+        price: 30,
+        img: "images/mrecordold.webp",
+        descrip: "Come Together, Something, Maxwell's Silver Hammer, Oh! Darling, Octopus's Garden, I Want You (She's So Heavy), Here Comes the Sun, Because, You Never Give"
+    },
+    {
+        name: "Lover by Taylor Swift ",
+        price: 40,
+        img: "/images/mrecordnew.jpg",
+        descrip: "I Forgot That You Existed, Cruel Summer, Lover, The Man, The Archer, I Think He Knows, Miss Americana & The Heartbreak Prince, Paper Rings, Cornelia Street, Death by a Thousand Cuts, London Boy, Soon You'll Get Better (feat. Dixie Chicks), False God, You Need To Calm Down, Afterglow, ME! (feat. Brendon Urie of Panic! At The Disco), It's Nice To Have a Friend, Daylight<"
+    },
+    {
+        name: "Appetite For Destruction by Guns 'n Roses",
+        price: 15,
+        img: "/images/mcassetteold.jpg",
+        descrip: "Welcome to the Jungle, It's So Easy, Nightrain, Out Ta Get Me, Mr. Brownstone, Paradise City, My Michelle, Think About You, Sweet Child o' Mine, You're Crazy, Anything Goes, Rocket Queen"
+    },
+    {
+        name: "Awesome Mix, Vol. 2 by Guardians of The Galaxy Vol. 2",
+        price: 12,
+        img: "/images/mcassettenew.jpg",
+        descrip: "Mr. Blue Sky, Fox on the Run, Lake Shore Drive, The Chain, Bring It on Home to Me, Southern Nights, My Sweet Lord, Brandy (You're a Fine Girl), Come a Little Bit Closer, Wham Bam Shang-a-Lang, Surrender, Father and Son, Flash Light, Guardians Inferno"
+    },
+    {
+        name: "Thriller by Michael Jackson",
+        price: 10,
+        img: "/images/mcdold.jpg",
+        descrip: "Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine (with Paul McCartney), Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life"
+    },
+    {
+        name: "Un Verano Sin Ti by Bad Bunny",
+        price: 20,
+        img: "/images/mcdnew.webp",
+        descrip: "Un Verano Sin Ti, La Noche de Anoche (with Rosalía), Te Mudaste, 100 Millones (with Luar La L), Pa' Romperla (with Don Omar), El Mundo es Mío (with Mora), Si Veo a Tu Mamá, La Zona, Soy El Diablo (with Natanael Cano), Trellas (with Mora), Bichiyal (with Yaviah), A Tu Merced, Safaera (with Jowell & Randy and Ñengo Flow), Como Antes (with Wisin & Yandel), RLNDT (with Zion & Lennox and Jhay Cortez), Vete."
+    }
 
+];
 
+// Display Music
+function displayMusic(music) {
+    if (music && music.length > 0) {
+        infoDisplay.innerHTML = music.map(music => `
+        <div class="card">
+        <div class="item-details">
+            <h4>${music.name}</h4>
+            <div class="product-image">
+                <img src="${music.img}" alt="${music.name}" class="card__image">
+            </div>
+            <div class="description">${music.descrip}</div>
+            <div class="price">$${music.price}</div>
+            <a href="#" class="btn btn-warning">add to cart</a>
+        </div>
+    </div>`
+    ).join('');
+
+    }
+}
