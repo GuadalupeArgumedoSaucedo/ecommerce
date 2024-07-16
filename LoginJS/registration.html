@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <form>
+                <h1>Signup</h1>
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="New password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="rePassword" placeholder="Retype password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                    <label>How did you hear about us?</label>
+                    <input type="radio" name="hear-about" value="Family"> Family
+                    <input type="radio" name="hear-about" value="Friend"> Friend
+                    <input type="radio" name="hear-about" value="Media"> Media
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="saveData()"><a href="login.html">Create account</a></button>
+                <!--<div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>-->
+            </form>
+        </div>
+    </main>
+    <script src="scripts/registration.js"></script>
+</body>
+</html>
