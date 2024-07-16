@@ -6,33 +6,63 @@ h2 {
   color: #f345bf;
 }
 
-.cards {
-  margin: 0 15px 0 50px;
-  max-width: 95%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
-  gap: 20px;
+main {
+  margin: 50px;
 }
+
+#productsDropdown {
+  margin-bottom: 50px;
+}
+
+#inStockInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-left: 30px;
+  max-width: 95%;
+}
+
 .card {
   box-shadow: 0 0 3px rgb(0, 0, 0);
-  width: 95%;
-  justify-content: end;
+  display: flex;
   align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow */
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(157, 157, 157, 0.343);
 }
 .card__image {
-  width: 55%;
-  display: block;
+  width: 100%;
+  max-height: 300px; 
+  object-fit: contain;
 }
-.cardinfo {
-  padding: 15px;
-  justify-content: start;
-}
-.cardcontent {
+
+.item-details {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8em;
-  border-bottom: 2px solid white;
-  font-size: x-large;
-  color: #853dc9;
+  flex-direction: column;
+  flex-grow: 1; 
+  justify-content: space-between; 
+  width: 100%;
+  text-align: center; 
+}
+
+.item-details h4 {
+  margin: 10px 0;
+}
+
+.price {
+  margin: 10px 0;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
 }
