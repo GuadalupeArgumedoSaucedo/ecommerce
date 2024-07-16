@@ -409,19 +409,19 @@ let music = [
 // Display Music
 function displayMusic(music) {
     if (music && music.length > 0) {
-        infoDisplay.innerHTML = music.map(music => `
-        <div class="card">
-        <div class="item-details">
-            <h4>${music.name}</h4>
-            <div class="product-image">
-                <img src="${music.img}" alt="${music.name}" class="card__image">
+        infoDisplay.innerHTML = music.map(musicItem => `
+            <div class="card">
+                <div class="item-details">
+                    <h4 class="cardcontent">${musicItem.name}</h4>
+                    <div class="product-image">
+                    <img src="${musicItem.img}" alt="${musicItem.name}" class="card__image">
+                    </div>
+                    <div class="description">${musicItem.descrip}</div>
+                    <div class="price">$${musicItem.price}</div>
+                    <a href="#" class="btn btn-warning">add to cart</a>
+                </div>
             </div>
-            <div class="description">${music.descrip}</div>
-            <div class="price">$${music.price}</div>
-            <a href="#" class="btn btn-warning">add to cart</a>
-        </div>
-    </div>`
-    ).join('');
-
+        `).join('');
+        addCartEventListeners(); 
     }
 }
