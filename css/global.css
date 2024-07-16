@@ -1,0 +1,93 @@
+body {
+    background-color: rgba(0, 0, 0, 0.911);
+    font-family: "Outfit", sans-serif;
+    color: #b2b2c1;
+}
+
+/* Nav Bar */
+nav {
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(45deg,#17afd1ad, #41d9fbc5);
+    padding: 0.5rem 1rem; 
+    height: 100px;
+}
+
+.navbar-toggler{
+    border-color:#E3C922; /* when screen is minimized */
+}
+
+.navbar-logo {
+    position: relative;
+    top: -5px; /* Adjust this alignment with text */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link {
+    color: #E3C922;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7); /* Softer shadow with more blur */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.nav-icon {
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+/* Nav Hover Effects */
+.navbar-logo:hover {
+    transform: scale(1.2);
+}
+
+.nav-link:hover {
+    color:#f345bf; /* Change color on hover */
+    text-shadow: 3px 3px 7px rgba(30, 30, 30, 0.9); /* Enhance shadow on hover */
+}
+
+.nav-icon:hover {
+    color: #360f79 !important;
+}
+
+/* Nav bar dropdown */
+.dropdown-menu.custom-dropdown-space {
+    margin-top: 15px; /* Adjust the value as needed */
+}
+
+.dropdown-item{
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.nav-icon.dropdown:hover .dropdown-menu {
+    display: block; /* Hover to display dropdown */
+}
+
+.nav-icon .dropdown-menu {
+    top: 100%;
+    left: auto;
+    right: 0; /* Align the dropdown menu to the right */
+    margin-top: 0; /* Adjust as needed to align the dropdown */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Hover to display dropdown */
+}
+
+.navbar-nav .dropdown-menu {
+    top: 100%; /* Ensure the dropdown is aligned next to the Products text */
+    left: 0; 
+    margin-top: 0;
+}
+
+.navbar-nav .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    margin-left: 8px; /* Add space between text and arrow */
+}
+
+

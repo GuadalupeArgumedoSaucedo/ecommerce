@@ -1,12 +1,5 @@
-body {
-    background-color: rgba(0, 0, 0, 0.911);
-    font-family: "Outfit", sans-serif;
-    color: #b2b2c1;
-}
-nav {
-    font-family: "Outfit", sans-serif;
-    background-color: #17c3e99c;
-}
+
+
 h1{
     color: #853dc9;
     padding-top: 20px;
@@ -17,31 +10,7 @@ h2{
     padding-left: 20px;
     color: #E3C922;
 }
-.nav-link{
-    color: #f345bf;
-    text-shadow: 2px 2px black;
-}
-.dropdown-item{
-    color: rgba(0, 0, 0, 0.911);
-}
-.navbar-brand{
-    color: #f4e919e3; 
-    padding-left: 0px;
-    padding-top: 5px;
-}
-.navbar-toggler{
-    border-color: #f345bf;
-}
-.nav-link-dropdown-toggle{
-    color: #E3C922;
-    text-decoration: none;
-    text-shadow: 2px 2px black;
-}
-.nav-item-dropdown{
-    padding-top: 7px;
-    position: relative;
-    display: inline-block;
-}
+
 .cards{
     margin: 0 15px 0 50px;
     max-width: 95%;

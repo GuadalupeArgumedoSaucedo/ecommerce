@@ -1,0 +1,67 @@
+h1 {
+    color: #853dc9;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(107, 5, 93, 0.766); /* Black shadow */
+}
+
+h3{
+    color: #f345bf;
+    text-align: center;
+}
+
+/* Info section */
+.row{
+    text-align: center;
+}
+
+#our-story,
+#about-products {
+    padding: 3rem 0;
+}
+
+#our-story img,
+#about-products img {
+    width: 100%;
+    height: auto;
+}
+
+#our-story h2,
+#about-products h2,
+#visit-today h2 {
+    color: #E3C922;
+}
+
+#our-story p,
+#visit-today p {
+    color: #c8c8c8;
+}
+
+#about-products p {
+    color:  #c8c8c8;
+    margin-right: 10px;
+}
+
+#about-products {
+    background-color: #ffffff19 !important; /* Light background for contrast */
+}
+
+/* Button styling */
+.btn-custom {
+    margin-top: 20px;
+    background-color:  #e4cd36;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #ffe229; 
+    color: #000000; 
+    transform: scale(1.1);
+}
+
