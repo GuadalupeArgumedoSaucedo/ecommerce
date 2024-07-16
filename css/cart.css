@@ -77,11 +77,11 @@ hr {
     margin-bottom: 20px;
   }
 }
-.product-frame {
+
+.product-frame img {
   width: 100px;
   height: 100px;
 }
-
 .item-details {
   display: flex;
   flex-direction: column;
@@ -133,10 +133,7 @@ hr {
   border: 1px solid #919090;
 }
 
-.product-frame img {
-  width: 100px;
-  height: 100px;
-}
+
 .quantity {
   display: flex;
   align-items: center;
