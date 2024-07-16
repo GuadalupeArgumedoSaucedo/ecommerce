@@ -63,21 +63,25 @@ function displayCartItems() {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
         cartItem.innerHTML = `
-            <div class="item-details">
-                <h4>${item.name}</h4>
-                <div class="product-image">
-                    <img src="${item.image}" alt="${item.name}" class="product-frame">
-                </div>
-                <div class="price">$${item.price}</div>
-                <div class="quantity">
-                    <input type="number" value="${item.quantity}" min="1" class="quantity-field" data-index="${index}">
-                </div>
-                <div class="subtotal">$${(item.price * item.quantity).toFixed(2)}</div>
-                <div class="remove">
-                    <button class="remove-btn" data-index="${index}">Remove</button>
-                </div>
+        <div class="item-details">
+        <h5>${item.name}</h5>
+        <div class="item-info">
+            <div class="product-frame">
+                <img src="${item.image}" alt="${item.name}">
             </div>
-        `;
+            <div class="price-info">
+                <label for="price-${index}">Price:</label>
+                <div id="price-${index}" class="price">$${item.price}</div>
+            </div>
+            <div class="quantity">
+                <label for="quantity-${index}">Qty:</label>
+                <input type="number" id="quantity-${index}" value="${item.quantity}" min="1" class="quantity-field" data-index="${index}">
+            </div>
+        </div>
+        <div class="subtotal">$${(item.price * item.quantity).toFixed(2)}</div>
+        <button class="remove-btn" data-index="${index}">Remove</button>
+    </div>
+`;
         cartItemsContainer.appendChild(cartItem);
     });
 

@@ -45,19 +45,10 @@
                                 <h4>About Us</h4>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/products.html">
                                 <h4>Products</h4>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                                <li><a class="dropdown-item" href="/music.html">Music</a></li>
-                                <li><a class="dropdown-item" href="/videogames.html">Video Games</a></li>
-                                <li><a class="dropdown-item" href="/books.html">Books</a></li>
-                                <li><a class="dropdown-item" href="/cards.html">Trading cards</a></li>
-                                <li><a class="dropdown-item" href="/collectibles.html">Collectibles</a></li>
-                                <li><a class="dropdown-item" href="/instruments.html">Instruments</a></li>
-                            </ul>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
@@ -113,12 +104,17 @@
                                             <input type="text" id="zip" name="zip" placeholder="85000">
                                         </div>
                                     </div>
+                                    <label style="margin-top: 15px;">
+                                        <input type="checkbox" name="sameadr" id="differentShipping"> Shipping address
+                                        diffrent than billing
+                                    </label>
                                 </div>
-
-
-
+                                
+                                
+                                
                                 <div class="col-12">
                                     <div id="shippingInfo" style="display: none;">
+                                        <hr class="my-4">
                                         <h3>Shipping Address</h3>
                                         <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                                         <input type="text" id="fname" name="firstname" placeholder="John Doe">
@@ -138,12 +134,8 @@
                                                 <input type="text" id="zip" name="zip" placeholder="85000">
                                             </div>
                                         </div>
+            
                                     </div>
-                                    <label>
-                                        <input type="checkbox" name="sameadr" id="differentShipping"> Shipping address
-                                        diffrent than billing
-                                    </label>
-
                                 </div>
                                 <hr class="my-4">
                                 <div class="col-12">
@@ -175,11 +167,11 @@
                         <div class="container">
                             <h2>Cart Summary</h2>
                             <div class="cart-items">
+                                
                             </div>
                             <hr class="my-4">
-                            <div class="cart-items"></div>
+
                             <div class="cart-summary">
-                                <h4 style="text-align: center; color: #f345bf; margin-bottom: 35px;">Cart</h4>
                                 <div class="summary-details">
                                     <div class="final-subtotal">Subtotal: $0.00</div>
                                     <div class="tax">Taxes (8%): $0.00</div>
