@@ -50,12 +50,13 @@ main {
   text-align: center; 
 }
 
-.item-details h4 {
+.cardcontent {
   margin: 10px 0;
 }
 
 .price {
-  margin: 10px 0;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .description {

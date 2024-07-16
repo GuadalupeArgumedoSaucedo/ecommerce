@@ -7,6 +7,7 @@ function addToCart(product) {
 }
 
 // Add event listeners to the "Add to Cart" buttons
+function addCartEventListeners() {
 document.querySelectorAll('.btn-warning').forEach((button, index) => {
     button.addEventListener('click', (event) => {
         event.preventDefault();
@@ -20,3 +21,4 @@ document.querySelectorAll('.btn-warning').forEach((button, index) => {
         addToCart(product);
     });
 });
+}
