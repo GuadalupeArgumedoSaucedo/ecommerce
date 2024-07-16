@@ -136,3 +136,43 @@ document.addEventListener('input', (event) => {
 
 // Display cart items on page load
 displayCartItems();
+
+//alert for checkout
+document.addEventListener('DOMContentLoaded', (event) => {
+    const checkoutButton = document.getElementById('checkoutButton');
+    const requiredFields = ['billing-fname', 'billing-email', 'billing-adr', 'billing-city', 'billing-state', 'billing-zip', 'cname', 'ccnum', 'expmonth', 'expyear', 'cvv'];
+    const cartItemsContainer = document.querySelector('.cart-items');
+
+    checkoutButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Validate required fields
+        let allFieldsFilled = true;
+        requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            console.log(`Checking field: ${fieldId}`);
+            if (!field.value.trim()) {
+                allFieldsFilled = false;
+                field.style.borderColor = 'red'; // Highlight the empty field
+                console.log(`Field ${fieldId} is empty`);
+            } else {
+                field.style.borderColor = ''; // Reset the border color if field is filled
+                console.log(`Field ${fieldId} is filled`);
+            }
+        });
+
+        if (allFieldsFilled) {
+            // Display alert
+            alert('Your items are on their way!');
+
+            // Clear cart items
+            cartItemsContainer.innerHTML = '';
+            document.querySelector('.final-subtotal').textContent = 'Subtotal: $0.00';
+            document.querySelector('.tax').textContent = 'Taxes (8%): $0.00';
+            document.querySelector('.shipping').textContent = 'Shipping: $5.00';
+            document.querySelector('.total').textContent = 'Total: $5.00';
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+});
