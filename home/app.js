@@ -187,7 +187,7 @@ let cards = [
     {
         name: "YuGiOh Battle of Chaos Booster",
         price: 100,
-        img: "5",
+        img: "/images/cyugiohs.jpg",
         descrip: "The pack introduces thrilling new cards and strategies for dueling enthusiasts. With a focus on chaos-themed monsters and spells, players can unleash devastating combos and turn the tide of battle."
     },
     {
