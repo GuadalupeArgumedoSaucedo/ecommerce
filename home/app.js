@@ -91,14 +91,16 @@ function displayCollectibles(collectibles) {
     if (collectibles && collectibles.length > 0) {
         infoDisplay.innerHTML = collectibles.map(collectible => `
             <div class="card" style="width: 18rem; margin-bottom: 20px;">
-                <img src="${collectible.img}" class="card-img-top" alt="${collectible.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${collectible.name}</h5>
-                    <p class="card-text">${collectible.descrip}</p>
-                    <p class="card-text">Price: $${collectible.price}</p>
-                    <a href="#" class="btn btn-warning" style="width: 100%;">Add to cart</a>
-                </div>
+            <div class="item-details">
+            <h4>${collectible.name}</h4>
+            <div class="product-image">
+                <img src="${collectible.img}" alt="${collectible.name}" class="product-frame">
             </div>
+            <div class="price">$${collectible.price}</div>
+            <div class="price">$${collectible.descrip}</div>
+            <a href="#" class="btn btn-warning" style="width: 100%;">add to cart</a>
+            
+        </div>
         `).join('');
    
     }
@@ -149,15 +151,17 @@ let instruments = [
 function displayInstruments(instruments) {
     if (instruments && instruments.length > 0) {
         infoDisplay.innerHTML = instruments.map(instrument => `
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-                <img src="${instrument.img}" class="card-img-top" alt="${instrument.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${instrument.name}</h5>
-                    <p class="card-text">${instrument.descrip}</p>
-                    <p class="card-text">Price: $${instrument.price}</p>
-                    <a href="#" class="btn btn-warning" style="width: 100%;">Add to cart</a>
-                </div>
-            </div>
+        <div class="card" style="width: 18rem; margin-bottom: 20px;">
+        <div class="item-details">
+        <h4>${instrument.name}</h4>
+        <div class="product-image">
+            <img src="${instrument.img}" alt="${instrument.name}" class="product-frame">
+        </div>
+        <div class="price">$${instrument.price}</div>
+        <div class="price">$${instrument.descrip}</div>
+        <a href="#" class="btn btn-warning" style="width: 100%;">add to cart</a>
+        
+    </div>
         `).join('');
 
     }
@@ -212,15 +216,17 @@ let cards = [
 function displayCards(cards) {
     if (cards && cards.length > 0) {
         infoDisplay.innerHTML = cards.map(card => `
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-                <img src="${card.img}" class="card-img-top" alt="${card.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${card.name}</h5>
-                    <p class="card-text">${card.descrip}</p>
-                    <p class="card-text">Price: $${card.price}</p>
-                    <a href="#" class="btn btn-warning" style="width: 100%;">Add to cart</a>
-                </div>
-            </div>
+        <div class="card" style="width: 18rem; margin-bottom: 20px;">
+        <div class="item-details">
+        <h4>${card.name}</h4>
+        <div class="product-image">
+            <img src="${card.img}" alt="${card.name}" class="product-frame">
+        </div>
+        <div class="price">$${card.price}</div>
+        <div class="price">$${card.descrip}</div>
+        <a href="#" class="btn btn-warning" style="width: 100%;">add to cart</a>
+        
+    </div>
         `).join('');
 
     }
@@ -276,15 +282,17 @@ let videoGames = [
 function displayvideoGames(videoGames) {
     if (videoGames && videoGames.length > 0) {
         infoDisplay.innerHTML = videoGames.map(videoGame => `
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-                <img src="${videoGame.img}" class="card-img-top" alt="${videoGame.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${videoGame.name}</h5>
-                    <p class="card-text">${videoGame.descrip}</p>
-                    <p class="card-text">Price: $${videoGame.price}</p>
-                    <a href="#" class="btn btn-warning" style="width: 100%;">Add to cart</a>
-                </div>
-            </div>
+        <div class="card" style="width: 18rem; margin-bottom: 20px;">
+        <div class="item-details">
+        <h4>${videoGame.name}</h4>
+        <div class="product-image">
+            <img src="${videoGame.img}" alt="${videoGame.name}" class="product-frame">
+        </div>
+        <div class="price">$${videoGame.price}</div>
+        <div class="price">$${videoGame.descrip}</div>
+        <a href="#" class="btn btn-warning" style="width: 100%;">add to cart</a>
+        
+    </div>
         `).join('');
 
     }
@@ -338,14 +346,16 @@ function displaybooks(books) {
     if (books && books.length > 0) {
         infoDisplay.innerHTML = books.map(book => `
             <div class="card" style="width: 18rem; margin-bottom: 20px;">
-                <img src="${book.img}" class="card-img-top" alt="${book.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${book.name}</h5>
-                    <p class="card-text">${book.descrip}</p>
-                    <p class="card-text">Price: $${book.price}</p>
-                    <a href="#" class="btn btn-warning" style="width: 100%;">Add to cart</a>
-                </div>
+            <div class="item-details">
+            <h4>${book.name}</h4>
+            <div class="product-image">
+                <img src="${book.img}" alt="${book.name}" class="product-frame">
             </div>
+            <div class="price">$${book.price}</div>
+            <div class="price">$${book.descrip}</div>
+            <a href="#" class="btn btn-warning" style="width: 100%;">add to cart</a>
+            
+        </div>
         `).join('');
 
     }
