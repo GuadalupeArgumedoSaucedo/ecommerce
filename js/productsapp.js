@@ -10,7 +10,6 @@ function addToCart(product) {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    alert('Item added to cart!');
 }
 
 // Function to update the cart button
