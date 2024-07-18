@@ -423,11 +423,6 @@ function displayMusic(music) {
     if (music && music.length > 0) {
         infoDisplay.innerHTML = music.map(musicItem => `
 
-        <div class="card">
-        <div class="item-details">
-            <h4>${musicItem.name}</h4>
-            <div class="product-image">
-                <img src="${musicItem.img}" alt="${musicItem.name}" class="card__image">
 
             <div class="card">
                 <div class="item-details">
@@ -437,58 +432,23 @@ function displayMusic(music) {
                     </div>
                     <div class="description">${musicItem.descrip}</div>
                     <div class="price">$${musicItem.price}</div>
-                    <a href="#" class="btn btn-warning">add to cart</a>
+                    <iframe id="exampleIframe" style="border-radius:0px;" src= https://open.spotify.com/embed/album/${musicItem.spotifyId}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
                 </div>
+                <a href="#" class="btn btn-warning">add to cart</a>
 
             </div>
-            <div class="description">${musicItem.descrip}</div>
-            <div class="price">$${musicItem.price}</div>
-         <iframe id="exampleIframe" style="border-radius:0px;" src= https://open.spotify.com/embed/album/${musicItem.spotifyId}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <a href="#" class="btn btn-warning">add to cart</a>
-        </div>
     </div>`
     ).join('');
+    addCartEventListeners(); 
 
     }
 }
 
-// <iframe id="exampleIframe" style="border-radius:0px;" src=`https://open.spotify.com/embed/album/${album.id}?utm_source=generator&theme=0` width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 let AuthToken = '';
-let albumArray = [
-  //Abbey Road
-  {
-    searchParam: 'Abbey Road by The Beatles',
-    spotifyId: '0ETFjACtuP2ADo6LFhL6HN'
-  }, 
-  //Lover
-  {
-    searchParam: 'Lover By Taylor Swift',
-    spotifyId: '1NAmidJlEaVgA3MpcPFYGq'
-  },
-  //Appetite For Destruction
-  {
-    searchParam: 'Appetite For Destruction by Guns N Roses',
-    spotifyId: '28yHV3Gdg30AiB8h8em1eW'
-  },
-  //Awesome Mix
-  {
-    searchParam: 'Vol. 2 Guardians of the Galaxy: Awesome Mix Vol. 2 (Original Motion Picture Soundtrack)',
-    spotifyId: '3dpnbhZjAfAl4W0lUJYNa8'
-  },
-  //Thriller
-  {
-    searchParam: 'Thriller by Michael Jackson',
-    spotifyId: '2ANVost0y2y52ema1E9xAZ'
-  },
-  //Un Verano Sin Ti
-  {
-    searchParam: 'Un Verano Sin Ti by Bad Bunny',
-    spotifyId: '3RQQmkQEvNCY4prGKE6oc5'
-  },
-];
 
-let albumData = [];
+// let albumData = [];
 
 // Load handler
 window.addEventListener('load', async function () {
@@ -607,7 +567,7 @@ async function getTrackList(albumId) {
 function populateDisplay() {
   console.log('Album Data', albumData);
   albumData.forEach(album => {
-    document.getElementById('exampleImageId').src = album.images[0].url;
+    // document.getElementById('exampleImageId').src = album.images[0].url;
     document.getElementById('exampleIframe').src = `https://open.spotify.com/embed/album/${album.id}?utm_source=generator&theme=0`;
   });
 }
