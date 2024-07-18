@@ -379,7 +379,7 @@ let music = [
         name: "Lover by Taylor Swift ",
         price: 40,
         img: "/images/mrecordnew.jpg",
-        descrip: "I Forgot That You Existed, Cruel Summer, Lover, The Man, The Archer, I Think He Knows, Miss Americana & The Heartbreak Prince, Paper Rings, Cornelia Street, Death by a Thousand Cuts, London Boy, Soon You'll Get Better (feat. Dixie Chicks), False God, You Need To Calm Down, Afterglow, ME! (feat. Brendon Urie of Panic! At The Disco), It's Nice To Have a Friend, Daylight<",
+        descrip: "I Forgot That You Existed, Cruel Summer, Lover, The Man, The Archer, I Think He Knows, Miss Americana & The Heartbreak Prince, Paper Rings, Cornelia Street, Death by a Thousand Cuts, London Boy, Soon You'll Get Better (feat. Dixie Chicks), False God, You Need To Calm Down, Afterglow, ME! (feat. Brendon Urie of Panic! At The Disco), It's Nice To Have a Friend, Daylight",
         spotifyId: '1NAmidJlEaVgA3MpcPFYGq'
 
     },

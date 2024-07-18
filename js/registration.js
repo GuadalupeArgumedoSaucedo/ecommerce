@@ -1,5 +1,13 @@
 "use strict";
-function saveData() {
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("registerForm").addEventListener("submit", saveData);
+});
+
+function saveData(event) {
+
+    event.preventDefault();
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -18,5 +26,6 @@ function saveData() {
         });
         localStorage.setItem("users", JSON.stringify(user_records));
         alert("User registered successfully!");
+        window.location.href="login.html";
     }
 }

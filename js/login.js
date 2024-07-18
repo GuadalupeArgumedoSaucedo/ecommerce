@@ -1,5 +1,13 @@
 "use strict";
-function saveData(){
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("loginForm").addEventListener("submit", saveData);
+});
+
+function saveData(event){
+
+    event.preventDefault();
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -14,6 +22,7 @@ function saveData(){
 
         localStorage.setItem("name",current_user.name);
         localStorage.setItem("email",current_user.email);
+        console.log('redirect');
         window.location.href="index.html";
     }
     else{
