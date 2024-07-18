@@ -372,37 +372,49 @@ let music = [
         name: "Abbey Road by The Beatles",
         price: 30,
         img: "images/mrecordold.webp",
-        descrip: "Come Together, Something, Maxwell's Silver Hammer, Oh! Darling, Octopus's Garden, I Want You (She's So Heavy), Here Comes the Sun, Because, You Never Give"
+        descrip: "Come Together, Something, Maxwell's Silver Hammer, Oh! Darling, Octopus's Garden, I Want You (She's So Heavy), Here Comes the Sun, Because, You Never Give",
+        spotifyId: '0ETFjACtuP2ADo6LFhL6HN'
+
     },
     {
         name: "Lover by Taylor Swift ",
         price: 40,
         img: "/images/mrecordnew.jpg",
-        descrip: "I Forgot That You Existed, Cruel Summer, Lover, The Man, The Archer, I Think He Knows, Miss Americana & The Heartbreak Prince, Paper Rings, Cornelia Street, Death by a Thousand Cuts, London Boy, Soon You'll Get Better (feat. Dixie Chicks), False God, You Need To Calm Down, Afterglow, ME! (feat. Brendon Urie of Panic! At The Disco), It's Nice To Have a Friend, Daylight<"
+        descrip: "I Forgot That You Existed, Cruel Summer, Lover, The Man, The Archer, I Think He Knows, Miss Americana & The Heartbreak Prince, Paper Rings, Cornelia Street, Death by a Thousand Cuts, London Boy, Soon You'll Get Better (feat. Dixie Chicks), False God, You Need To Calm Down, Afterglow, ME! (feat. Brendon Urie of Panic! At The Disco), It's Nice To Have a Friend, Daylight<",
+        spotifyId: '1NAmidJlEaVgA3MpcPFYGq'
+
     },
     {
         name: "Appetite For Destruction by Guns 'n Roses",
         price: 15,
         img: "/images/mcassetteold.jpg",
-        descrip: "Welcome to the Jungle, It's So Easy, Nightrain, Out Ta Get Me, Mr. Brownstone, Paradise City, My Michelle, Think About You, Sweet Child o' Mine, You're Crazy, Anything Goes, Rocket Queen"
+        descrip: "Welcome to the Jungle, It's So Easy, Nightrain, Out Ta Get Me, Mr. Brownstone, Paradise City, My Michelle, Think About You, Sweet Child o' Mine, You're Crazy, Anything Goes, Rocket Queen",
+        spotifyId: '28yHV3Gdg30AiB8h8em1eW'
+
     },
     {
         name: "Awesome Mix, Vol. 2 by Guardians of The Galaxy Vol. 2",
         price: 12,
         img: "/images/mcassettenew.jpg",
-        descrip: "Mr. Blue Sky, Fox on the Run, Lake Shore Drive, The Chain, Bring It on Home to Me, Southern Nights, My Sweet Lord, Brandy (You're a Fine Girl), Come a Little Bit Closer, Wham Bam Shang-a-Lang, Surrender, Father and Son, Flash Light, Guardians Inferno"
+        descrip: "Mr. Blue Sky, Fox on the Run, Lake Shore Drive, The Chain, Bring It on Home to Me, Southern Nights, My Sweet Lord, Brandy (You're a Fine Girl), Come a Little Bit Closer, Wham Bam Shang-a-Lang, Surrender, Father and Son, Flash Light, Guardians Inferno",
+        spotifyId: '3dpnbhZjAfAl4W0lUJYNa8'
+
     },
     {
         name: "Thriller by Michael Jackson",
         price: 10,
         img: "/images/mcdold.jpg",
-        descrip: "Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine (with Paul McCartney), Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life"
+        descrip: "Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine (with Paul McCartney), Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life",
+        spotifyId: '2ANVost0y2y52ema1E9xAZ'
+
     },
     {
         name: "Un Verano Sin Ti by Bad Bunny",
         price: 20,
         img: "/images/mcdnew.webp",
-        descrip: "Un Verano Sin Ti, La Noche de Anoche (with Rosalía), Te Mudaste, 100 Millones (with Luar La L), Pa' Romperla (with Don Omar), El Mundo es Mío (with Mora), Si Veo a Tu Mamá, La Zona, Soy El Diablo (with Natanael Cano), Trellas (with Mora), Bichiyal (with Yaviah), A Tu Merced, Safaera (with Jowell & Randy and Ñengo Flow), Como Antes (with Wisin & Yandel), RLNDT (with Zion & Lennox and Jhay Cortez), Vete."
+        descrip: "Un Verano Sin Ti, La Noche de Anoche (with Rosalía), Te Mudaste, 100 Millones (with Luar La L), Pa' Romperla (with Don Omar), El Mundo es Mío (with Mora), Si Veo a Tu Mamá, La Zona, Soy El Diablo (with Natanael Cano), Trellas (with Mora), Bichiyal (with Yaviah), A Tu Merced, Safaera (with Jowell & Randy and Ñengo Flow), Como Antes (with Wisin & Yandel), RLNDT (with Zion & Lennox and Jhay Cortez), Vete.",
+        spotifyId: '3RQQmkQEvNCY4prGKE6oc5'
+
     }
 
 ];
@@ -419,10 +431,171 @@ function displayMusic(music) {
             </div>
             <div class="description">${music.descrip}</div>
             <div class="price">$${music.price}</div>
+         <iframe id="exampleIframe" style="border-radius:0px;" src= https://open.spotify.com/embed/album/${music.spotifyId}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <a href="#" class="btn btn-warning">add to cart</a>
         </div>
     </div>`
     ).join('');
 
     }
+}
+
+// <iframe id="exampleIframe" style="border-radius:0px;" src=`https://open.spotify.com/embed/album/${album.id}?utm_source=generator&theme=0` width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+let AuthToken = '';
+let albumArray = [
+  //Abbey Road
+  {
+    searchParam: 'Abbey Road by The Beatles',
+    spotifyId: '0ETFjACtuP2ADo6LFhL6HN'
+  }, 
+  //Lover
+  {
+    searchParam: 'Lover By Taylor Swift',
+    spotifyId: '1NAmidJlEaVgA3MpcPFYGq'
+  },
+  //Appetite For Destruction
+  {
+    searchParam: 'Appetite For Destruction by Guns N Roses',
+    spotifyId: '28yHV3Gdg30AiB8h8em1eW'
+  },
+  //Awesome Mix
+  {
+    searchParam: 'Vol. 2 Guardians of the Galaxy: Awesome Mix Vol. 2 (Original Motion Picture Soundtrack)',
+    spotifyId: '3dpnbhZjAfAl4W0lUJYNa8'
+  },
+  //Thriller
+  {
+    searchParam: 'Thriller by Michael Jackson',
+    spotifyId: '2ANVost0y2y52ema1E9xAZ'
+  },
+  //Un Verano Sin Ti
+  {
+    searchParam: 'Un Verano Sin Ti by Bad Bunny',
+    spotifyId: '3RQQmkQEvNCY4prGKE6oc5'
+  },
+];
+
+let albumData = [];
+
+// Load handler
+window.addEventListener('load', async function () {
+  await getAuthToken();
+
+  // Array to store all promises from getAlbumData calls
+  let promises = albumArray.map(album => getAlbumData(album));
+
+  // Wait for all promises to resolve
+  await Promise.all(promises);
+
+  // Now albumData should be populated correctly
+  populateDisplay();
+});
+
+async function getAuthToken() {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+  myHeaders.append("Cookie", "__Host-device_id=AQDQwv4UzovoCMWNobOwK_sVP2NM_T1KjHJqmaO6OCQzY4XhH4tiRvDBJWXsc5JFb2l59Y6Lv07q7FjSraSmnnTxQ2872d08Mfc; sp_tr=false");
+
+  const urlencoded = new URLSearchParams();
+  urlencoded.append("grant_type", "client_credentials");
+  urlencoded.append("client_id", "f63a6e780bee424fb53e92f23890da6e");
+  urlencoded.append("client_secret", "dc910ece129e4fdd976bf7c71de4abe8");
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: urlencoded,
+    redirect: "follow"
+  };
+
+  try {
+    const response = await fetch("https://accounts.spotify.com/api/token", requestOptions);
+    const result = await response.json();
+    AuthToken = result.access_token;
+    console.log("Access token:", AuthToken);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function getAlbumData(album) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${AuthToken}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+
+  try {
+    const response = await fetch(`https://api.spotify.com/v1/search?type=album&q=${encodeURIComponent(album.searchParam)}`, requestOptions);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const result = await response.json();
+    let albums = result.albums.items;
+
+    // Find the album that matches the spotifyId
+    let targetId = album.spotifyId;
+    let matchingAlbum = albums.find(album => album.id === targetId);
+
+    if (matchingAlbum) {
+      albumData.push(matchingAlbum);
+      await getAndDisplayTracks(matchingAlbum.id); // Call function to fetch and display tracks
+    } else {
+      console.log(`Album with Spotify ID ${targetId} not found for searchParam: ${album.searchParam}`);
+    }
+  } catch (error) {
+    console.error('Error fetching album data:', error);
+  }
+}
+
+async function getAndDisplayTracks(albumId) {
+  try {
+    let tracks = await getTrackList(albumId);
+    console.log('tracks', tracks);
+    let trackListText = tracks.join(', ');
+    document.getElementById('trackList').innerText = trackListText;
+  } catch (error) {
+    console.error('Error fetching tracks:', error);
+  }
+}
+
+async function getTrackList(albumId) {
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${AuthToken}`);
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+
+  try {
+    const response = await fetch(`https://api.spotify.com/v1/albums/${albumId}/tracks?limit=50`, requestOptions);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const result = await response.json();
+
+    // Extracting track names
+    let trackNames = result.items.map(track => track.name);
+
+    return trackNames;
+  } catch (error) {
+    console.error('Error fetching track list:', error);
+    return [];
+  }
+}
+
+//A simple function to modify the display, would use the same methodology to populate the images and iframe as product cards are generated.
+//Check the getAndDisplayTracks() method to see the list of tracks 
+function populateDisplay() {
+  console.log('Album Data', albumData);
+  albumData.forEach(album => {
+    document.getElementById('exampleImageId').src = album.images[0].url;
+    document.getElementById('exampleIframe').src = `https://open.spotify.com/embed/album/${album.id}?utm_source=generator&theme=0`;
+  });
 }
