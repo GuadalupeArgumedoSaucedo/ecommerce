@@ -422,16 +422,16 @@ let music = [
 // Display Music
 function displayMusic(music) {
     if (music && music.length > 0) {
-        infoDisplay.innerHTML = music.map(music => `
+        infoDisplay.innerHTML = music.map(musicItem => `
         <div class="card">
         <div class="item-details">
-            <h4>${music.name}</h4>
+            <h4>${musicItem.name}</h4>
             <div class="product-image">
-                <img src="${music.img}" alt="${music.name}" class="card__image">
+                <img src="${musicItem.img}" alt="${musicItem.name}" class="card__image">
             </div>
-            <div class="description">${music.descrip}</div>
-            <div class="price">$${music.price}</div>
-         <iframe id="exampleIframe" style="border-radius:0px;" src= https://open.spotify.com/embed/album/${music.spotifyId}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="description">${musicItem.descrip}</div>
+            <div class="price">$${musicItem.price}</div>
+         <iframe id="exampleIframe" style="border-radius:0px;" src= https://open.spotify.com/embed/album/${musicItem.spotifyId}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <a href="#" class="btn btn-warning">add to cart</a>
         </div>
     </div>`
